@@ -1,4 +1,4 @@
-FROM node:16.20.2 AS build-stage
+FROM node:20 AS build-stage
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ RUN node_modules/.bin/mocha ./tests --recursive
 RUN npm prune --production
  
 
-FROM node:16.20.2-alpine
+FROM node:20-alpine
 
 WORKDIR /app
 
