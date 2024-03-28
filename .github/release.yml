@@ -13,6 +13,7 @@ changelog:
       labels:
         - Semver-Minor
         - enhancement
+        - other
     - title: Other Changes
       labels:
         - "*"
